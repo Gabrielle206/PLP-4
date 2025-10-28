@@ -64,7 +64,7 @@ int main() {
     //undefined behavior (comportamento indefinido em C)
     printf("\nExemplo incorreto - Erro Logico\n");
     /* 
-        chama a funcao area, no entanto, no parametro formal temos a f1 representando
+        chama a funcao area, no entanto, no parametro real temos a f1 representando
         a união que guarda o circulo e passamos o tipo como retangulo.
     */
     float area_errada = area(f1, retangulo);
