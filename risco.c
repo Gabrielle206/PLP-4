@@ -43,20 +43,16 @@ int main() {
     union forma f1, f2;
 
     printf("Exemplo correto - Circulo\n");
-    printf("Raio: ");
-    // campo c da union
-    scanf("%f", &f1.c.raio); 
+    f1.c.raio = 10.0; 
+    
     // chama a funcao area 
     float area_C = area(f1, circulo);
     printf("Area do circulo: %.2f\n", area_C);
         
     printf("\nExemplo correto - Retangulo\n");
-    printf("Largura: ");
-    // campo r da union
-    scanf("%f", &f2.r.largura);
-    printf("Altura: ");
-     // campo r da union
-    scanf("%f", &f2.r.altura);
+    f2.r.largura = 5.0;
+    f2.r.altura = 3.0;
+    
     // chama a funcao area 
     float area_R = area(f2, retangulo);
     printf("Area do retangulo: %.2f\n", area_R);
